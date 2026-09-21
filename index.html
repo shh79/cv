@@ -165,6 +165,9 @@ ul{margin:0;padding:0;list-style:none}
 .btn-ghost:hover{border-color:var(--line-strong);background:var(--surface-2);transform:translateY(-2px)}
 
 .aside-card{padding:20px}
+/* Pinned within the hero row. Only the SHORTER column can travel: the aside sets
+   the row height, so the intro has (asideH - introH) of room to stay put. */
+.hero-intro{position:sticky;top:84px;align-self:start}
 /* aspect-ratio reserves the box before the image decodes, so nothing shifts on load */
 .portrait{position:relative;margin:0 0 18px;aspect-ratio:4/5;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface-2)}
 .portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 18%}
@@ -257,6 +260,9 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr}
   .nav-links{display:none}
+  /* Single column: the intro is taller than the viewport, so pinning it would
+     trap the reader instead of revealing the card below. */
+  .hero-intro{position:static}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
@@ -276,6 +282,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
   .card,.chip,.domain,.thesis,.period{background:#fff!important;border:1px solid #c8c8d0!important;box-shadow:none!important;backdrop-filter:none!important;transform:none!important}
   .grad-text,.hero h1{color:#000!important;-webkit-text-fill-color:#000!important;background:none!important}
   .reveal{opacity:1!important;transform:none!important}
+  .hero-intro{position:static!important}
   section{padding:10pt 0;break-inside:auto}
   .wrap{max-width:100%;padding:0}
   .hero{padding:0 0 8pt}
@@ -329,7 +336,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
 <!-- ===================== HERO ===================== -->
 <section class="hero" aria-labelledby="name">
   <div class="wrap hero-grid">
-    <div>
+    <div class="hero-intro">
       <p class="badge reveal"><span class="dot" aria-hidden="true"></span> Open to senior front-end &amp; front-end lead roles · Remote</p>
       <h1 class="reveal" id="name">Hessam Hosseini</h1>
       <p class="role reveal">
