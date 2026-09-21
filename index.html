@@ -10,6 +10,8 @@
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Hessam Hosseini — Senior Front-End Engineer">
 <meta property="og:description" content="Angular · React · TypeScript · Node.js — enterprise front-end architecture and team leadership.">
+<meta property="og:image" content="https://shh79.github.io/cv/assets/profile.webp">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
@@ -163,6 +165,10 @@ ul{margin:0;padding:0;list-style:none}
 .btn-ghost:hover{border-color:var(--line-strong);background:var(--surface-2);transform:translateY(-2px)}
 
 .aside-card{padding:20px}
+/* aspect-ratio reserves the box before the image decodes, so nothing shifts on load */
+.portrait{position:relative;margin:0 0 18px;aspect-ratio:4/5;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface-2)}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 18%}
+.portrait::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 58%,color-mix(in srgb,var(--bg) 70%,transparent))}
 .aside-card h2{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);font-family:var(--mono);font-weight:500;margin-bottom:12px}
 .contact-list{display:grid;gap:1px}
 .contact-list li > *{display:flex;align-items:center;gap:11px;padding:9px 12px;border-radius:var(--radius-sm);color:var(--muted);font-size:.9rem;transition:color .22s var(--ease),background .22s var(--ease),transform .22s var(--ease);word-break:break-word}
@@ -264,7 +270,9 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
 @media print{
   @page{margin:14mm 14mm}
   html,body{background:#fff!important;color:#000!important;font-size:10.5pt;line-height:1.45}
-  .aurora,.grid-overlay,.nav,#progress,.cta-row,.skip,footer,.badge{display:none!important}
+  /* Photo is omitted from the PDF: many ATS parsers mishandle images, and
+     UK/US/DE hiring convention is a photo-free CV. Delete to include it. */
+  .aurora,.grid-overlay,.nav,#progress,.cta-row,.skip,footer,.badge,.portrait{display:none!important}
   .card,.chip,.domain,.thesis,.period{background:#fff!important;border:1px solid #c8c8d0!important;box-shadow:none!important;backdrop-filter:none!important;transform:none!important}
   .grad-text,.hero h1{color:#000!important;-webkit-text-fill-color:#000!important;background:none!important}
   .reveal{opacity:1!important;transform:none!important}
@@ -355,6 +363,9 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
     </div>
 
     <aside class="card aside-card reveal">
+      <figure class="portrait">
+        <img src="assets/profile.webp" width="1024" height="1536" alt="Portrait of Hessam Hosseini" fetchpriority="high" decoding="async">
+      </figure>
       <h2>Contact</h2>
       <ul class="contact-list">
         <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Kashan, Iran</span></span></li>
@@ -565,7 +576,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
       <article class="card proj reveal">
         <div class="proj-head">
           <span class="proj-mark" aria-hidden="true">AV</span>
-          <div><h3>Avak</h3><span class="kind">Private / Commercial · E-Learning</span></div>
+          <div><h3>Avak</h3><span class="kind">Jabiz Parda · E-Learning</span></div>
         </div>
         <p>Learning platform for mothers of newborn children, delivering structured educational content to a consumer audience.</p>
         <ul class="chips"><li class="chip key">Angular</li><li class="chip">TypeScript</li></ul>
@@ -574,7 +585,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
       <article class="card proj reveal">
         <div class="proj-head">
           <span class="proj-mark" aria-hidden="true">TJ</span>
-          <div><h3>Tamland Junior</h3><span class="kind">Private / Commercial · E-Learning</span></div>
+          <div><h3>Tamland Junior</h3><span class="kind">Jabiz Parda · E-Learning</span></div>
         </div>
         <p>Learning platform for pre-school children, built around an interface suited to a young, early-reader audience.</p>
         <ul class="chips"><li class="chip key">Angular</li><li class="chip">TypeScript</li></ul>
@@ -583,7 +594,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
       <article class="card proj reveal">
         <div class="proj-head">
           <span class="proj-mark" aria-hidden="true">KA</span>
-          <div><h3>Karabiz</h3><span class="kind">Private / Commercial · E-Learning</span></div>
+          <div><h3>Karabiz</h3><span class="kind">Jabiz Parda · E-Learning</span></div>
         </div>
         <p>Online academy for building practical workplace skills, delivering skills-focused courses to working professionals.</p>
         <ul class="chips"><li class="chip key">Angular</li><li class="chip">TypeScript</li></ul>
