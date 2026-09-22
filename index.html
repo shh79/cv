@@ -121,8 +121,12 @@ ul{margin:0;padding:0;list-style:none}
    UTILITIES
    ============================================================ */
 .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:24px}
-.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--accent-1);color:#fff;padding:12px 20px;border-radius:0 0 12px 0;font-weight:600}
-.skip:focus{left:0}
+/* Clipped rather than pushed off-screen: a negative `left` sits in the
+   scrollable direction under dir="rtl" and gave the Persian page a
+   ~10000px scroll width on mobile. */
+.skip{position:absolute;inset-block-start:0;inset-inline-start:0;z-index:100;background:var(--accent-1);color:#fff;padding:12px 20px;border-radius:0;border-end-end-radius:12px;font-weight:600;
+  width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip:focus{width:auto;height:auto;overflow:visible;clip-path:none}
 .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
 .mono{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
 .ph{color:var(--accent-3);font-weight:600}
@@ -147,14 +151,17 @@ ul{margin:0;padding:0;list-style:none}
 }
 .nav.stuck{border-bottom-color:var(--line)}
 .nav-inner{display:flex;align-items:center;gap:18px;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.02em;margin-right:auto;white-space:nowrap}
+/* min-width:0 lets the brand shrink instead of pushing the action buttons
+   past the viewport on ~320px phones; the name ellipsises, the mark never does. */
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.02em;margin-right:auto;white-space:nowrap;min-width:0;overflow:hidden}
+.brand>span:not(.brand-mark){min-width:0;overflow:hidden;text-overflow:ellipsis}
 .brand-mark{width:30px;height:30px;border-radius:9px;background:var(--grad);display:grid;place-items:center;color:#fff;font-size:.85rem;font-weight:800;flex:none}
 .nav-links{display:flex;gap:2px}
 .nav-links a{position:relative;padding:8px 13px;border-radius:999px;font-size:.875rem;font-weight:500;color:var(--muted);transition:color .25s var(--ease),background .25s var(--ease)}
 .nav-links a:hover{color:var(--text);background:var(--surface-2)}
 .nav-links a[aria-current="true"]{color:var(--text)}
 .nav-links a[aria-current="true"]::after{content:"";position:absolute;left:13px;right:13px;bottom:3px;height:2px;border-radius:2px;background:var(--grad)}
-.nav-actions{display:flex;gap:8px;align-items:center}
+.nav-actions{display:flex;gap:8px;align-items:center;flex:none}
 .icon-btn{
   width:38px;height:38px;display:grid;place-items:center;flex:none;
   border:1px solid var(--line);background:var(--surface);color:var(--text);
@@ -226,7 +233,7 @@ section{padding:clamp(42px,6vw,70px) 0;scroll-margin-top:80px}
 .sec-rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent);min-width:40px}
 
 /* Skills */
-.skill-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:16px}
+.skill-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(288px,100%),1fr));gap:16px}
 .skill-group{padding:22px 24px}
 .skill-group h3{display:flex;align-items:center;gap:10px;font-size:.98rem;font-weight:700;margin-bottom:14px}
 .skill-group h3 i{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--surface-2);border:1px solid var(--line);flex:none}
@@ -254,7 +261,7 @@ section{padding:clamp(42px,6vw,70px) 0;scroll-margin-top:80px}
 .stack-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;padding-top:16px;border-top:1px dashed var(--line)}
 
 /* Projects */
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px}
 .proj{padding:24px 26px;display:flex;flex-direction:column}
 .proj-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .proj-mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:none;background:var(--grad);color:#fff;font-weight:800;font-size:.86rem}
@@ -275,7 +282,7 @@ svg.ext{width:13px;height:13px;flex:none;stroke:currentColor;fill:none;stroke-wi
 .domain span{font-size:.78rem;color:var(--faint)}
 
 /* Education */
-.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px}
 .edu{padding:26px 28px}
 .edu h3{font-size:1.12rem;margin-bottom:4px}
 .edu .org{color:var(--muted);font-size:.93rem;margin-bottom:16px}
