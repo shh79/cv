@@ -263,8 +263,8 @@ section{padding:clamp(42px,6vw,70px) 0;scroll-margin-top:80px}
 /* Projects */
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px}
 .proj{padding:24px 26px;display:flex;flex-direction:column}
-.proj-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.proj-mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:none;background:var(--grad);color:#fff;font-weight:800;font-size:.86rem}
+.proj-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+.proj-mark{width:38px;height:38px;margin-top:4px;border-radius:11px;display:grid;place-items:center;flex:none;background:var(--grad);color:#fff;font-weight:800;font-size:.86rem}
 .proj h3{font-size:1.06rem}
 .proj h3 a{display:inline-flex;align-items:center;gap:6px;transition:color .22s var(--ease)}
 .proj h3 a:hover{color:var(--accent-3)}
@@ -719,11 +719,11 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
       <article class="card proj reveal">
         <div class="proj-head">
           <span class="proj-mark" aria-hidden="true">AC</span>
-          <div><h3 data-i18n="proj.salary.title">Salary Slip Platform</h3><span class="kind" data-i18n="proj.salary.kind">Arman Carpet · Full-Stack</span></div>
+          <div><h3><a href="https://salary.arman-carpet.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="proj.salary.title">Salary Slip Platform</span><svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></h3><span class="kind" data-i18n="proj.salary.kind">Arman Carpet · Full-Stack</span></div>
         </div>
         <p data-i18n="proj.salary.desc">Payroll platform giving the company's employees access to their salary slips. Built end to end — front end, back end and data model.</p>
         <ul class="chips">
-          <li class="chip key">Next.js (Full-Stack)</li><li class="chip">TypeScript</li><li class="chip">MySQL</li>
+          <li class="chip key">Next.js (Full-Stack)</li><li class="chip">TypeScript</li><li class="chip">MongoDB</li>
         </ul>
       </article>
 
@@ -732,10 +732,19 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           <span class="proj-mark" aria-hidden="true">IN</span>
           <div><h3 data-i18n="proj.invoice.title">Invoice &amp; Document Management</h3><span class="kind" data-i18n="proj.invoice.kind">Product Supply Group · Full-Stack</span></div>
         </div>
-        <p data-i18n="proj.invoice.desc">Invoice and document management platform for a product supply group. Built end to end — front end, back end and data model.</p>
+        <p data-i18n="proj.invoice.desc">Local web application for managing a product supply group's invoices and documents. Built end to end — front end, back end and data model.</p>
         <ul class="chips">
           <li class="chip key">Next.js (Full-Stack)</li><li class="chip">TypeScript</li><li class="chip">MySQL</li>
         </ul>
+      </article>
+
+      <article class="card proj reveal">
+        <div class="proj-head">
+          <span class="proj-mark" aria-hidden="true">CH</span>
+          <div><h3><a href="https://chelhesaran.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="proj.chelhesaran.title">Chelhesaran</span><svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></h3><span class="kind" data-i18n="proj.chelhesaran.kind">Carpet Store · Full-Stack</span></div>
+        </div>
+        <p data-i18n="proj.chelhesaran.desc">Online store for a Kashan carpet brand, selling machine-made carpets direct to customers. Built end to end — front end, back end and data model.</p>
+        <ul class="chips"><li class="chip key">Next.js (Full-Stack)</li><li class="chip">TypeScript</li><li class="chip">MongoDB</li></ul>
       </article>
 
       <article class="card proj reveal">
@@ -979,7 +988,11 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
     'proj.salary.desc': 'سامانه حقوق و دستمزد که به کارکنان شرکت امکان دسترسی به فیش حقوقی‌شان را می‌دهد. توسعه‌یافته به‌صورت کامل — فرانت‌اند، بک‌اند و مدل داده.',
     'proj.invoice.title': 'مدیریت فاکتور و اسناد',
     'proj.invoice.kind': 'گروه تأمین کالا · فول‌استک',
-    'proj.invoice.desc': 'سامانه مدیریت فاکتور و اسناد برای یک گروه تأمین کالا. توسعه‌یافته به‌صورت کامل — فرانت‌اند، بک‌اند و مدل داده.',
+    'proj.invoice.desc': 'وب‌اپلیکیشن محلی برای مدیریت فاکتورها و اسناد یک گروه تأمین کالا. توسعه‌یافته به‌صورت کامل — فرانت‌اند، بک‌اند و مدل داده.',
+
+    'proj.chelhesaran.title': 'چهل حصاران',
+    'proj.chelhesaran.kind': 'فروشگاه فرش · فول‌استک',
+    'proj.chelhesaran.desc': 'فروشگاه آنلاین یک برند فرش کاشان برای فروش مستقیم فرش ماشینی به مشتریان. توسعه‌یافته به‌صورت کامل — فرانت‌اند، بک‌اند و مدل داده.',
 
     'proj.avak.kind': 'Jabiz Parda · آموزش آنلاین',
     'proj.avak.desc': 'پلتفرم آموزشی برای مادران نوزادان، با ارائه محتوای آموزشی ساختاریافته به مخاطب عمومی.',
