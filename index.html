@@ -251,6 +251,7 @@ section{padding:clamp(42px,6vw,70px) 0;scroll-margin-top:80px}
 .timeline{position:relative;padding-inline-start:34px}
 .timeline::before{content:"";position:absolute;inset-inline-start:8px;top:10px;bottom:10px;width:2px;border-radius:2px;background:linear-gradient(180deg,var(--accent-1),var(--accent-2),transparent)}
 .tl-item{position:relative}
+.tl-item + .tl-item{margin-top:16px}
 .tl-item::before{content:"";position:absolute;inset-inline-start:-30px;top:28px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent-1);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent-1) 18%,transparent)}
 .job{padding:26px 28px}
 .job-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline;margin-bottom:6px}
@@ -503,15 +504,13 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
         <span class="grad-text">Senior Front-End Engineer</span><span class="sep" aria-hidden="true">·</span><span class="role-stack">Angular<span class="sep" aria-hidden="true">·</span>React<span class="sep" aria-hidden="true">·</span>TypeScript</span>
       </p>
       <p class="summary reveal" data-i18n="hero.summary">
-        Software engineer with <strong>5+ years of professional experience</strong> building and leading
-        enterprise-scale web applications, with the depth of that experience in
-        <strong>front-end development</strong>. Specialised in <strong>Angular</strong> and <strong>React</strong>
-        with TypeScript, with <strong>full-stack Next.js</strong> delivery across both front end and back end,
-        backed by hands-on <strong>Node.js / Express</strong> work across REST API design,
-        data modelling and real-time communication. As <strong>Front-End Team Lead</strong> I defined the
-        coding standards, code review process and pre-release testing stage the team builds to. I work at
-        the level of architecture and data contracts, not only UI — with a consistent focus on scalable
-        structure, reusable component systems and long-term maintainability.
+        Senior Front-End Engineer and Team Lead with <strong>5+ years</strong> building
+        <strong>enterprise-scale web applications</strong> in <strong>Angular</strong> and <strong>React</strong>
+        with TypeScript, plus <strong>full-stack delivery</strong> in Next.js and Node.js / Express.
+        I lead a team of 5, own front-end architecture end to end, and set the coding standards,
+        code-review process and release gates the team ships by. My edge is working across
+        <strong>architecture, API contracts and data models</strong> — not only UI — to build products
+        that stay maintainable as they scale.
       </p>
       <div class="cta-row reveal">
         <a class="btn btn-primary" href="mailto:shh2079@gmail.com">
@@ -640,16 +639,14 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           </div>
           <p class="org" data-i18n="job.org"><b>Jabiz Parda</b> · Remote · ~5 years</p>
           <ul class="bullets" data-i18n="job.bullets">
-            <li><b>Led a front-end team of 5</b> on large enterprise web applications, owning architectural decisions from component structure and state management through to API contracts.</li>
-            <li><b>Decomposed each feature into smaller units of work</b>, created the corresponding tasks and assigned them across the team — keeping scope reviewable and progress measurable.</li>
-            <li><b>Reviewed and revised every developer's pull request</b> on its task branch, using review as the team's main channel for mentoring and for enforcing consistency.</li>
-            <li><b>Defined the merge criteria</b>: work reached the feature branch only once its pull request was approved <b>and</b> all test cases passed, and the feature branch reached main only once the feature was complete.</li>
-            <li><b>Owned post-release feedback and defect triage</b>, staying responsible for the work after it shipped rather than at hand-off.</li>
-            <li><b>Established the team's coding standards and development process</b>, giving the front-end team a consistent baseline for how features are designed, built and shipped.</li>
-            <li><b>Designed and maintained scalable front-end architecture</b> for complex applications, prioritising reusable components, clear module boundaries and long-term maintainability.</li>
-            <li><b>Contributed to data model and REST API design</b> alongside back-end engineers, shaping contracts before implementation rather than consuming them after the fact.</li>
-            <li><b>Delivered enterprise projects with complex business requirements</b>, working across business analysis, application architecture, API communication and feature implementation.</li>
-            <li><b>Collaborated across technical teams</b> — back-end, analysis and stakeholders — to define technical direction for new products and major features, working <b>fully remotely</b> throughout.</li>
+            <li><b>Lead a team of 5 front-end engineers</b> delivering large enterprise web applications, fully remote, owning everything from component architecture and state management to API contracts.</li>
+            <li><b>Architected a modular, scalable front end</b> — reusable components, clear module boundaries and shared conventions that keep complex applications maintainable as they grow.</li>
+            <li><b>Build with modern Angular</b> — standalone components, Signals, OnPush change detection and RxJS reactive patterns — for predictable, efficient UIs.</li>
+            <li><b>Co-design data models and REST APIs</b> with back-end engineers, agreeing contracts before implementation instead of adapting to them afterwards.</li>
+            <li><b>Set the team's engineering standards</b> — coding conventions, branch strategy and merge gates: work merges only with an approved PR and passing tests; features reach main only when complete.</li>
+            <li><b>Review every pull request</b> — code review is the team's main channel for mentoring and consistency.</li>
+            <li><b>Plan delivery</b> by splitting each feature into small, reviewable tasks distributed across the team, keeping progress measurable.</li>
+            <li><b>Shape technical direction</b> for new products and major features with back-end, analysts and stakeholders, and own post-release feedback and defect triage.</li>
           </ul>
           <ul class="chips stack-row" data-i18n="job.chips">
             <li class="chip key">Angular</li><li class="chip key">TypeScript</li><li class="chip">RxJS</li>
@@ -657,6 +654,28 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
             <li class="chip">Pull Request Review</li><li class="chip">Branch Strategy</li>
             <li class="chip">Task Decomposition</li><li class="chip">Team Leadership</li>
           </ul>
+        </article>
+      </div>
+      <div class="tl-item reveal">
+        <article class="card job">
+          <div class="job-top">
+            <h3 data-i18n="job2.title">Senior Front-End Developer</h3>
+            <span class="period" data-i18n="job2.period">2021 — Present</span>
+          </div>
+          <p class="org" data-i18n="job2.org"><b>Armani Team</b> · Freelance · part-time alongside Jabiz Parda</p>
+          <ul class="bullets" data-i18n="job2.bullets">
+            <li>Built the <b>Jazireh &amp; Tinaco</b> machine-parts supplier platforms in Angular (see Projects).</li>
+            <li>Implemented <b>role-based access control</b> for multiple user types, a <b>customer loyalty club</b> and <b>sales management</b>.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="tl-item reveal">
+        <article class="card job">
+          <div class="job-top">
+            <h3 data-i18n="job3.title">Full-Stack Developer</h3>
+            <span class="period" data-i18n="job3.period">2022 — 2023</span>
+          </div>
+          <p class="org" data-i18n="job3.org"><b>Awin Team</b> · Freelance · part-time alongside Jabiz Parda · Product: <b>KidooKAI</b></p>
         </article>
       </div>
     </div>
@@ -705,7 +724,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           <span class="proj-mark" aria-hidden="true">JT</span>
           <div>
             <h3>Jazireh &amp; Tinaco</h3>
-            <span class="kind" data-i18n="proj.jt.kind">Private / Commercial · Machine Parts Supply</span>
+            <span class="kind" data-i18n="proj.jt.kind">Armani Team · Freelance · Machine Parts Supply</span>
           </div>
         </div>
         <p data-i18n="proj.jt.desc">Two Angular platforms for machine parts suppliers, each combining role-based access for multiple user types with a customer club and sales management.</p>
@@ -725,7 +744,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           <span class="proj-mark" aria-hidden="true">AC</span>
           <div><h3><a href="https://salary.arman-carpet.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="proj.salary.title">Salary Slip Platform</span><svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></h3><span class="kind" data-i18n="proj.salary.kind">Arman Carpet · Full-Stack</span></div>
         </div>
-        <p data-i18n="proj.salary.desc">Payroll platform giving the company's employees access to their salary slips. Built end to end — front end, back end and data model.</p>
+        <p data-i18n="proj.salary.desc">Employee self-service portal for viewing salary slips. Designed and built end to end — UI, API and data model.</p>
         <ul class="chips">
           <li class="chip key">Next.js (Full-Stack)</li><li class="chip">TypeScript</li><li class="chip">MongoDB</li>
         </ul>
@@ -736,7 +755,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           <span class="proj-mark" aria-hidden="true">IN</span>
           <div><h3 data-i18n="proj.invoice.title">Invoice &amp; Document Management</h3><span class="kind" data-i18n="proj.invoice.kind">Product Supply Group · Full-Stack</span></div>
         </div>
-        <p data-i18n="proj.invoice.desc">Local web application for managing a product supply group's invoices and documents. Built end to end — front end, back end and data model.</p>
+        <p data-i18n="proj.invoice.desc">Internal web app for managing a supply group's invoices and documents. Designed and built end to end — UI, API and data model.</p>
         <ul class="chips">
           <li class="chip key">Next.js (Full-Stack)</li><li class="chip">TypeScript</li><li class="chip">MySQL</li>
         </ul>
@@ -747,7 +766,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           <span class="proj-mark" aria-hidden="true">CH</span>
           <div><h3><a href="https://chelhesaran.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="proj.chelhesaran.title">Chelhesaran</span><svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></h3><span class="kind" data-i18n="proj.chelhesaran.kind">Carpet Store · Full-Stack</span></div>
         </div>
-        <p data-i18n="proj.chelhesaran.desc">Online store for a Kashan carpet brand, selling machine-made carpets direct to customers. Built end to end — front end, back end and data model.</p>
+        <p data-i18n="proj.chelhesaran.desc">Direct-to-consumer online store for a Kashan carpet brand. Designed and built end to end — storefront, back end and data model.</p>
         <ul class="chips"><li class="chip key">Next.js (Full-Stack)</li><li class="chip">TypeScript</li><li class="chip">MongoDB</li></ul>
       </article>
 
@@ -919,7 +938,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
     'hero.badge': 'آماده همکاری در نقش‌های ارشد فرانت‌اند و سرپرستی تیم · دورکاری یا هیبریدی',
     'hero.name': 'حسام حسینی',
     'hero.role': '<span class="grad-text">مهندس ارشد فرانت‌اند</span><span class="sep" aria-hidden="true">·</span><span class="role-stack">Angular<span class="sep" aria-hidden="true">·</span>React<span class="sep" aria-hidden="true">·</span>TypeScript</span>',
-    'hero.summary': 'مهندس نرم‌افزار با <strong>بیش از 5 سال تجربه حرفه‌ای</strong> در ساخت و راهبری اپلیکیشن‌های وب در مقیاس سازمانی، که عمق این تجربه در <strong>توسعه فرانت‌اند</strong> است. متخصص <strong>Angular</strong> و <strong>React</strong> همراه با TypeScript، با توسعه <strong>فول‌استک Next.js</strong> در هر دو سمت فرانت‌اند و بک‌اند، و تجربه عملی <strong>Node.js / Express</strong> در طراحی REST API، مدل‌سازی داده و ارتباط بلادرنگ. به عنوان <strong>سرپرست تیم فرانت‌اند</strong>، استانداردهای کدنویسی، فرایند بازبینی کد و مرحله تست پیش از انتشار را برای تیم تعریف کردم. کار من در سطح معماری و قراردادهای داده است، نه فقط رابط کاربری — با تمرکز پیوسته بر ساختار مقیاس‌پذیر، کامپوننت‌های قابل استفاده مجدد و نگهداشت‌پذیری بلندمدت.',
+    'hero.summary': 'مهندس ارشد فرانت‌اند و سرپرست تیم با <strong>بیش از 5 سال</strong> تجربه در ساخت <strong>اپلیکیشن‌های وب سازمانی</strong> با <strong>Angular</strong> و <strong>React</strong> و TypeScript، به‌همراه <strong>توسعه فول‌استک</strong> با Next.js و Node.js / Express. یک تیم 5 نفره را سرپرستی می‌کنم، مسئول معماری فرانت‌اند از ابتدا تا انتها هستم و استانداردهای کدنویسی، فرایند بازبینی کد و معیارهای انتشار تیم را تعیین کرده‌ام. نقطه قوت من کار هم‌زمان روی <strong>معماری، قراردادهای API و مدل داده</strong> است — نه فقط رابط کاربری — برای ساخت محصولاتی که با رشدشان نگهداشت‌پذیر می‌مانند.',
 
     'cta.contact': 'تماس با من',
     'cta.pdf': 'دانلود PDF',
@@ -957,21 +976,28 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
     'job.period': 'آذر 1400 — تاکنون',
     'job.org': '<b>Jabiz Parda</b> · دورکاری · حدود 5 سال',
     'job.bullets':
-      '<li><b>سرپرستی یک تیم 5 نفره فرانت‌اند</b> روی اپلیکیشن‌های وب سازمانی بزرگ، با مالکیت تصمیم‌های معماری از ساختار کامپوننت و مدیریت وضعیت تا قراردادهای API.</li>' +
-      '<li><b>شکستن هر قابلیت به واحدهای کاری کوچک‌تر</b>، ایجاد تسک‌های متناظر و تخصیص آن‌ها بین اعضای تیم — به‌گونه‌ای که دامنه کار قابل بازبینی و پیشرفت قابل اندازه‌گیری بماند.</li>' +
-      '<li><b>بازبینی و اصلاح Pull Request همه توسعه‌دهندگان</b> روی برنچ تسک خودشان، با استفاده از بازبینی به عنوان کانال اصلی آموزش تیم و حفظ یکدستی کد.</li>' +
-      '<li><b>تعریف معیارهای merge</b>: کار تنها زمانی به برنچ فیچر می‌رسید که Pull Request آن تأیید شده <b>و</b> همه تست‌کیس‌ها پاس شده باشند، و برنچ فیچر تنها پس از تکمیل کامل قابلیت به main می‌رفت.</li>' +
-      '<li><b>مسئولیت بازخوردها و رفع باگ‌ها پس از انتشار</b>، یعنی ماندن پای کار بعد از تحویل، نه تا لحظه تحویل.</li>' +
-      '<li><b>تدوین استانداردهای کدنویسی و فرایند توسعه تیم</b>، که یک مبنای یکسان برای طراحی، ساخت و تحویل قابلیت‌ها در اختیار تیم فرانت‌اند گذاشت.</li>' +
-      '<li><b>طراحی و نگهداری معماری مقیاس‌پذیر فرانت‌اند</b> برای اپلیکیشن‌های پیچیده، با اولویت کامپوننت‌های قابل استفاده مجدد، مرزهای روشن ماژول‌ها و نگهداشت‌پذیری بلندمدت.</li>' +
-      '<li><b>مشارکت در طراحی مدل داده و REST API</b> در کنار مهندسان بک‌اند، یعنی شکل‌دادن به قراردادها پیش از پیاده‌سازی، نه مصرف آن‌ها پس از آن.</li>' +
-      '<li><b>تحویل پروژه‌های سازمانی با نیازمندی‌های پیچیده کسب‌وکار</b>، با کار در حوزه تحلیل کسب‌وکار، معماری اپلیکیشن، ارتباط API و پیاده‌سازی قابلیت‌ها.</li>' +
-      '<li><b>همکاری بین تیم‌های فنی</b> — بک‌اند، تحلیل و ذی‌نفعان — برای تعیین جهت فنی محصولات جدید و قابلیت‌های اصلی، به صورت <b>کاملاً دورکار</b>.</li>',
+      '<li><b>سرپرستی تیم 5 نفره فرانت‌اند</b> در توسعه اپلیکیشن‌های وب سازمانی بزرگ به‌صورت دورکار، با مسئولیت کامل از معماری کامپوننت و مدیریت وضعیت تا قراردادهای API.</li>' +
+      '<li><b>طراحی معماری ماژولار و مقیاس‌پذیر فرانت‌اند</b> — کامپوننت‌های قابل استفاده مجدد، مرزهای روشن ماژول‌ها و قواعد مشترک که اپلیکیشن‌های پیچیده را در طول رشد نگهداشت‌پذیر نگه می‌دارد.</li>' +
+      '<li><b>توسعه با Angular مدرن</b> — Standalone Components، Signals، OnPush و الگوهای واکنشی RxJS — برای رابط‌های کاربری قابل پیش‌بینی و کارآمد.</li>' +
+      '<li><b>طراحی مشترک مدل داده و REST API</b> با مهندسان بک‌اند؛ توافق بر قراردادها پیش از پیاده‌سازی، نه تطبیق با آن‌ها پس از آن.</li>' +
+      '<li><b>تعیین استانداردهای مهندسی تیم</b> — قواعد کدنویسی، استراتژی برنچ و معیارهای merge: کار فقط با PR تأییدشده و تست‌های موفق merge می‌شود و فیچر فقط پس از تکمیل به main می‌رود.</li>' +
+      '<li><b>بازبینی همه Pull Requestها</b> — بازبینی کد، کانال اصلی منتورینگ و یکدستی کد در تیم است.</li>' +
+      '<li><b>برنامه‌ریزی تحویل</b> با شکستن هر قابلیت به تسک‌های کوچک و قابل بازبینی و توزیع آن‌ها در تیم، تا پیشرفت کار قابل اندازه‌گیری بماند.</li>' +
+      '<li><b>تعیین جهت فنی</b> محصولات جدید و قابلیت‌های اصلی همراه با بک‌اند، تحلیلگران و ذی‌نفعان، و مسئولیت بازخوردها و رفع باگ‌های پس از انتشار.</li>',
     'job.chips':
       '<li class="chip key">Angular</li><li class="chip key">TypeScript</li><li class="chip">RxJS</li>' +
       '<li class="chip">معماری کامپوننت</li><li class="chip">REST API</li><li class="chip">مدل‌سازی داده</li>' +
       '<li class="chip">بازبینی Pull Request</li><li class="chip">استراتژی برنچ</li>' +
       '<li class="chip">تفکیک تسک</li><li class="chip">رهبری تیم</li>',
+    'job2.title': 'توسعه‌دهنده ارشد فرانت‌اند',
+    'job2.period': '1400 — تاکنون',
+    'job2.org': '<b>Armani Team</b> · فریلنس · پاره‌وقت هم‌زمان با Jabiz Parda',
+    'job2.bullets':
+      '<li>ساخت پلتفرم‌های تأمین قطعات <b>Jazireh &amp; Tinaco</b> با Angular (بخش پروژه‌ها).</li>' +
+      '<li>پیاده‌سازی <b>کنترل دسترسی مبتنی بر نقش</b> برای انواع کاربران، <b>باشگاه مشتریان وفادار</b> و <b>مدیریت فروش</b>.</li>',
+    'job3.title': 'توسعه‌دهنده فول‌استک',
+    'job3.period': '1401 — 1402',
+    'job3.org': '<b>Awin Team</b> · فریلنس · پاره‌وقت هم‌زمان با Jabiz Parda · محصول: <b>KidooKAI</b>',
 
     'proj.imidro.title': 'ایمیدرو — پلتفرم‌های سازمانی',
     'proj.imidro.kind': 'سازمان توسعه و نوسازی معادن و صنایع معدنی ایران',
@@ -989,7 +1015,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
       '<li>توسعه <b>کامل اپلیکیشن‌های فرانت‌اند</b> — معماری، ساختار کامپوننت‌های قابل استفاده مجدد، مدیریت وضعیت و پیاده‌سازی قابلیت‌ها.</li>' +
       '<li>مشارکت در <b>معماری کلی اپلیکیشن</b>، با کار روی منطق کسب‌وکار، ساختار داده و ارتباط API، نه صرفاً رابط کاربری.</li>',
 
-    'proj.jt.kind': 'خصوصی / تجاری · تأمین قطعات ماشین‌آلات',
+    'proj.jt.kind': 'Armani Team · فریلنس · تأمین قطعات ماشین‌آلات',
     'proj.jt.desc': 'دو پلتفرم Angular برای تأمین‌کنندگان قطعات ماشین‌آلات، که هرکدام دسترسی مبتنی بر نقش برای انواع کاربران را با باشگاه مشتریان و مدیریت فروش ترکیب می‌کنند.',
     'proj.jt.bullets':
       '<li>پیاده‌سازی <b>دسترسی مبتنی بر نقش برای انواع کاربران</b>، به‌طوری که نقش هر کاربر تعیین‌کننده آن چیزی باشد که در سراسر اپلیکیشن می‌بیند و مجاز به انجامش است.</li>' +
@@ -1000,14 +1026,14 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
 
     'proj.salary.title': 'سامانه فیش حقوقی',
     'proj.salary.kind': 'فرش آرمان · فول‌استک',
-    'proj.salary.desc': 'سامانه حقوق و دستمزد که به کارکنان شرکت امکان دسترسی به فیش حقوقی‌شان را می‌دهد. توسعه‌یافته به‌صورت کامل — فرانت‌اند، بک‌اند و مدل داده.',
+    'proj.salary.desc': 'پرتال سلف‌سرویس کارکنان برای مشاهده فیش حقوقی. طراحی و توسعه کامل — رابط کاربری، API و مدل داده.',
     'proj.invoice.title': 'مدیریت فاکتور و اسناد',
     'proj.invoice.kind': 'گروه تأمین کالا · فول‌استک',
-    'proj.invoice.desc': 'وب‌اپلیکیشن محلی برای مدیریت فاکتورها و اسناد یک گروه تأمین کالا. توسعه‌یافته به‌صورت کامل — فرانت‌اند، بک‌اند و مدل داده.',
+    'proj.invoice.desc': 'وب‌اپلیکیشن داخلی برای مدیریت فاکتورها و اسناد یک گروه تأمین کالا. طراحی و توسعه کامل — رابط کاربری، API و مدل داده.',
 
     'proj.chelhesaran.title': 'چهل حصاران',
     'proj.chelhesaran.kind': 'فروشگاه فرش · فول‌استک',
-    'proj.chelhesaran.desc': 'فروشگاه آنلاین یک برند فرش کاشان برای فروش مستقیم فرش ماشینی به مشتریان. توسعه‌یافته به‌صورت کامل — فرانت‌اند، بک‌اند و مدل داده.',
+    'proj.chelhesaran.desc': 'فروشگاه آنلاین فروش مستقیم یک برند فرش کاشان به مشتریان. طراحی و توسعه کامل — ویترین فروشگاه، بک‌اند و مدل داده.',
 
     'proj.avak.kind': 'Jabiz Parda · آموزش آنلاین',
     'proj.avak.desc': 'پلتفرم آموزشی برای مادران نوزادان، با ارائه محتوای آموزشی ساختاریافته به مخاطب عمومی.',

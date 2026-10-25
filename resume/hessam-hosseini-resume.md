@@ -38,6 +38,17 @@ Software engineer with **5+ years of professional experience** building and lead
 
 **Stack:** Angular · TypeScript · RxJS · Component Architecture · REST APIs · Data Modelling · Pull Request Review · Branch Strategy · Task Decomposition · Team Leadership
 
+### Senior Front-End Developer — Armani Team
+
+*2021 — Present · Freelance · part-time alongside Jabiz Parda*
+
+- Built the **Jazireh & Tinaco** machine-parts supplier platforms in Angular.
+- Implemented **role-based access control** for multiple user types, a **customer loyalty club** and **sales management**.
+
+### Full-Stack Developer — Awin Team
+
+*2022 — 2023 · Freelance · part-time alongside Jabiz Parda · Product: KidooKAI*
+
 ## Selected Projects
 
 ### IMIDRO — Enterprise Platforms
