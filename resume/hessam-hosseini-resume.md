@@ -2,13 +2,13 @@
 
 **Senior Front-End Engineer** · Angular · React · TypeScript
 
-Kashan, Iran (UTC+3:30) · Open to senior front-end & front-end lead roles · Remote
+Kashan, Iran (UTC+3:30) · Open to senior front-end & front-end lead roles · Remote or Hybrid
 
 [+98 936 183 0308](tel:+989361830308) · [shh2079@gmail.com](mailto:shh2079@gmail.com) · [linkedin.com/in/hessamhosseini](https://www.linkedin.com/in/hessamhosseini/) · [github.com/shh79](https://github.com/shh79) · [t.me/HessamHosseiniii](https://t.me/HessamHosseiniii) · [shh79.github.io/cv](https://shh79.github.io/cv/)
 
 ## Summary
 
-Software engineer with **~5 years of professional experience** building and leading enterprise-scale web applications, with the depth of that experience in **front-end development**. Specialised in **Angular** and **React** with TypeScript, with **full-stack Next.js** delivery across both front end and back end, backed by hands-on **Node.js / Express** work across REST API design, data modelling and real-time communication. As **Front-End Team Lead** I defined the coding standards, code review process and pre-release testing stage the team builds to. I work at the level of architecture and data contracts, not only UI — with a consistent focus on scalable structure, reusable component systems and long-term maintainability.
+Software engineer with **5+ years of professional experience** building and leading enterprise-scale web applications, with the depth of that experience in **front-end development**. Specialised in **Angular** and **React** with TypeScript, with **full-stack Next.js** delivery across both front end and back end, backed by hands-on **Node.js / Express** work across REST API design, data modelling and real-time communication. As **Front-End Team Lead** I defined the coding standards, code review process and pre-release testing stage the team builds to. I work at the level of architecture and data contracts, not only UI — with a consistent focus on scalable structure, reusable component systems and long-term maintainability.
 
 ## Core Technical Skills
 
@@ -108,14 +108,14 @@ Online store for a Kashan carpet brand, selling machine-made carpets direct to c
 
 ### What I'm Looking For
 
-*Open · Remote*
+*Open · Remote or Hybrid*
 
 Senior Front-End Developer · Senior Angular Developer · Front-End Engineer · Full-Stack JavaScript / TypeScript · Front-End Lead / Technical Leadership — in engineering environments where architecture, code quality, scalability and development practice are genuinely valued.
 
 - Large, complex applications where **architecture and maintainability** carry real weight.
 - Teams that invest in **code review, standards and testing** as part of how they ship.
 - Scope that spans **front end, API design and data modelling** rather than UI implementation alone.
-- Working **remotely from Iran (UTC+3:30)** — **flexible on working hours** and able to overlap any timezone a team works in.
+- Working **remotely or hybrid** from Iran (UTC+3:30) — **flexible on working hours** and able to overlap any timezone a team works in.
 
 ## Languages
 

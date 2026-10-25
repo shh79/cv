@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hessam Hosseini — Senior Front-End Engineer — CV</title>
+<meta name="author" content="Hessam Hosseini">
+<meta name="description" content="Senior Front-End Engineer · Angular · React · TypeScript · Next.js — CV">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=block">
+<style>
+/* Two fixed A4 sheets, one column of real text per sheet so ATS parsers
+   read it top to bottom. Render: Chrome → Print → A4, margins none. */
+@page{size:A4;margin:0}
+:root{
+  --ink:#15171c;--body:#2b2f38;--muted:#545b68;
+  --accent:#2347c6;--tint:#f1f4fc;--rule:#d8dde7;
+}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#e6e9ef;font:400 13px/1.48 'IBM Plex Sans','Segoe UI',Helvetica,Arial,sans-serif;color:var(--body)}
+a{color:inherit;text-decoration:none}
+strong{font-weight:600;color:var(--ink)}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+
+.page{position:relative;width:210mm;height:297mm;margin:24px auto;background:#fff;overflow:hidden;
+  padding:46px 56px 36px;display:flex;flex-direction:column;box-shadow:0 2px 18px rgba(20,23,28,.12)}
+.page::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--accent)}
+@media print{body{background:#fff}.page{margin:0;box-shadow:none;break-after:page}}
+
+/* Header */
+.hd{display:flex;justify-content:space-between;gap:32px;align-items:flex-start}
+h1{font:600 44px/1 'Newsreader',Georgia,serif;letter-spacing:-.015em;color:var(--ink);margin:0 0 8px}
+.role{font-size:17px;font-weight:600;color:var(--accent);margin-bottom:3px}
+.stack{font-size:13.5px;color:var(--ink);font-weight:500}
+.avail{margin-top:9px;display:inline-flex;align-items:center;gap:8px;font-size:12.2px;font-weight:500;color:var(--ink);
+  background:var(--tint);padding:4px 11px 4px 9px;border-radius:999px}
+.avail i{width:7px;height:7px;border-radius:50%;background:#1a8a4a;display:block}
+.contact{display:flex;flex-direction:column;gap:5px;font:400 11.8px/1.35 'IBM Plex Mono',Consolas,monospace;color:var(--ink);padding-top:6px;white-space:nowrap}
+.contact li{display:flex;align-items:center;gap:8px}
+.contact svg{width:13px;height:13px;flex:none;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* Key facts */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:18px 0 2px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.facts div{padding:8px 0 8px 14px;border-left:1px solid var(--rule)}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font:600 21px/1.15 'Newsreader',Georgia,serif;color:var(--ink)}
+.facts span{font-size:11.5px;color:var(--muted)}
+
+/* Sections */
+section{margin-top:15px}
+h2{display:flex;align-items:center;gap:12px;margin:0 0 8px;font:700 12.5px/1 'IBM Plex Sans',sans-serif;
+  text-transform:uppercase;color:var(--accent)}
+h2::after{content:"";flex:1;height:1px;background:var(--rule)}
+.summary{font-size:13.4px;line-height:1.52;color:var(--body);text-wrap:pretty}
+
+.skills{display:grid;grid-template-columns:104px 1fr;gap:4px 18px;margin:0}
+.skills dt{font-weight:600;color:var(--ink);font-size:12.6px}
+.skills dd{margin:0;font-size:12.8px}
+
+/* Entries */
+.entry + .entry{margin-top:11px}
+.eh{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+h3{margin:0;font-size:14.5px;font-weight:600;color:var(--ink)}
+.date{font:400 11.6px 'IBM Plex Mono',Consolas,monospace;color:var(--muted);white-space:nowrap}
+.meta{font-size:12.2px;color:var(--muted);margin:0 0 5px}
+.meta a{color:var(--accent)}
+.desc{margin-bottom:5px;text-wrap:pretty}
+.bul{list-style:square;padding-left:15px}
+.bul li{margin-bottom:3px;padding-left:1px;text-wrap:pretty}
+.bul li::marker{color:var(--accent);font-size:.9em}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.tags li{font:500 11px/1 'IBM Plex Mono',monospace;color:var(--accent);background:var(--tint);padding:4px 7px;border-radius:3px}
+
+/* Page 2 running head */
+.rh{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.rh b{font:600 19px 'Newsreader',Georgia,serif;color:var(--ink)}
+.rh span{font:400 11.4px 'IBM Plex Mono',monospace;color:var(--muted)}
+.foot{margin-top:auto;padding-top:10px;display:flex;justify-content:space-between;font:400 10.8px 'IBM Plex Mono',monospace;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 ============ -->
+<div class="page">
+  <header class="hd">
+    <div>
+      <h1>Hessam Hosseini</h1>
+      <p class="role">Senior Front-End Engineer · Front-End Team Lead</p>
+      <p class="stack">Angular · React · TypeScript · Next.js · Node.js</p>
+      <p class="avail"><i aria-hidden="true"></i>Open to Remote or Hybrid roles · flexible hours</p>
+    </div>
+    <ul class="contact">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:shh2079@gmail.com">shh2079@gmail.com</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+989361830308">+98 936 183 0308</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><a href="https://www.linkedin.com/in/hessamhosseini/">linkedin.com/in/hessamhosseini</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg><a href="https://t.me/HessamHosseiniii">t.me/HessamHosseiniii</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><a href="https://shh79.github.io/cv/">shh79.github.io/cv</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Kashan, Iran · UTC+3:30</li>
+    </ul>
+  </header>
+
+  <div class="facts">
+    <div><b>5+ years</b><span>software engineering</span></div>
+    <div><b>Team of 5</b><span>front-end engineers led</span></div>
+    <div><b>9 products</b><span>delivered to production</span></div>
+    <div><b>B.Sc. CE</b><span>Iran Univ. of Science &amp; Tech.</span></div>
+  </div>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Senior front-end engineer with <strong>5+ years</strong> building and leading <strong>enterprise-scale web applications</strong> in <strong>Angular</strong> and <strong>React</strong> with TypeScript, plus <strong>full-stack Next.js / Node.js</strong> delivery. As <strong>Front-End Team Lead</strong> I own the architecture, coding standards, code-review process and pre-release testing gates the team ships by. I work at the level of architecture and data contracts — not only UI — with a steady focus on scalable structure, reusable component systems and long-term maintainability.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Front-End</dt><dd><strong>Angular</strong> (Standalone, Signals, OnPush), <strong>React</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong>, JavaScript (ES2015+), <strong>RxJS</strong>, NgRx, HTML5, CSS3, Tailwind CSS, Angular Material, PrimeNG, PWA, Responsive Design</dd>
+      <dt>Back-End</dt><dd>Node.js, Express.js, Next.js (full-stack), REST API design, GraphQL, WebSockets, Server-Sent Events, Webhooks, Authentication &amp; Authorization</dd>
+      <dt>Databases</dt><dd>SQL Server, PostgreSQL, MySQL, MongoDB</dd>
+      <dt>Tooling</dt><dd>Git, GitHub, Docker, Linux (Ubuntu), GraphQL Code Generator, D3.js, Three.js, Mininet</dd>
+      <dt>Practice</dt><dd>Software architecture, code review, coding standards, branch strategy, data modelling, business analysis, technical leadership, mentoring</dd>
+      <dt>AI-Assisted</dt><dd>Claude Code, Cursor, OpenCode, MCP (Model Context Protocol), Python for LLM tooling</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <article class="entry">
+      <div class="eh"><h3>Front-End Team Lead — Jabiz Parda</h3><span class="date">Nov 2021 – Present</span></div>
+      <p class="meta">Enterprise web applications · Remote · ~5 years</p>
+      <ul class="bul">
+        <li><strong>Lead a front-end team of 5</strong> on large enterprise applications, owning architecture from component structure and state management through to API contracts.</li>
+        <li><strong>Established the team's coding standards and development process</strong> — the shared baseline for how features are designed, built, reviewed and shipped.</li>
+        <li><strong>Review every pull request</strong> on its task branch, using code review as the main channel for mentoring and for keeping the codebase consistent.</li>
+        <li><strong>Defined the merge gates:</strong> task work reaches a feature branch only with an approved PR and all test cases passing; a feature reaches main only when complete.</li>
+        <li><strong>Break each feature into reviewable units of work</strong>, create the tasks and distribute them across the team so progress stays measurable.</li>
+        <li><strong>Co-design data models and REST APIs</strong> with back-end engineers, shaping contracts before implementation rather than consuming them after.</li>
+        <li><strong>Own post-release feedback and defect triage</strong> — accountable for the work after it ships, not at hand-off.</li>
+        <li><strong>Delivered enterprise platforms with complex business rules</strong>, including IMIDRO's national-scale suite (see Projects).</li>
+      </ul>
+      <ul class="tags"><li>Angular</li><li>TypeScript</li><li>RxJS</li><li>Component Architecture</li><li>REST APIs</li><li>Data Modelling</li><li>Code Review</li></ul>
+    </article>
+  </section>
+
+  <div class="foot"><span>Hessam Hosseini — CV</span><span>1 / 2</span></div>
+</div>
+
+<!-- ============ PAGE 2 ============ -->
+<div class="page">
+  <div class="rh"><b>Hessam Hosseini</b><span>shh2079@gmail.com · +98 936 183 0308</span></div>
+
+  <section>
+    <h2>Selected Projects</h2>
+
+    <article class="entry">
+      <div class="eh"><h3>IMIDRO — Enterprise Platform Suite</h3><span class="date">Angular · TypeScript</span></div>
+      <p class="meta">Iranian Mines &amp; Mining Industries Development and Renovation Organization</p>
+      <p class="desc">Large-scale platform for a national industrial organisation, with complex relationships across modules — each domain carrying its own business rules, data model and reporting. Domains delivered: <strong>HSE</strong>, <strong>Energy</strong>, <strong>Planning &amp; Scheduling</strong>, <strong>Productivity</strong>, <strong>HR</strong> and an organisational <strong>Phonebook</strong>.</p>
+      <ul class="bul">
+        <li>Led <strong>business analysis and solution design</strong> for assigned modules, turning operational requirements into technical designs.</li>
+        <li>Designed <strong>data models and APIs</strong> with back-end engineers, then built the front-end integration layer.</li>
+        <li>Built the <strong>front-end applications end to end</strong> — architecture, reusable components, state management and features.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3>Jazireh &amp; Tinaco — Machine-Parts Supplier Platforms</h3><span class="date">Angular · TypeScript</span></div>
+      <p class="meta">Private / commercial clients</p>
+      <ul class="bul">
+        <li>Implemented <strong>role-based access for multiple user types</strong>, with each role driving what is visible and permitted across the app.</li>
+        <li>Built the <strong>customer club</strong> for rewarding returning customers and <strong>sales management</strong> for the commercial workflow.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3>Salary Slip Platform — Arman Carpet</h3><span class="date">Next.js · MongoDB</span></div>
+      <p class="meta">Full-stack · <a href="https://salary.arman-carpet.com/">salary.arman-carpet.com</a></p>
+      <p class="desc">Payroll platform giving employees access to their salary slips. Built end to end — UI, API and data model.</p>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3>Chelhesaran — Carpet E-Commerce Store</h3><span class="date">Next.js · MongoDB</span></div>
+      <p class="meta">Full-stack · <a href="https://chelhesaran.com/">chelhesaran.com</a></p>
+      <p class="desc">Online store for a Kashan carpet brand selling machine-made carpets direct to customers. Built end to end.</p>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3>Invoice &amp; Document Management</h3><span class="date">Next.js · MySQL</span></div>
+      <p class="meta">Full-stack · Product supply group</p>
+      <p class="desc">Local web application for managing a supply group's invoices and documents. Built end to end.</p>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3>Avak · Tamland Junior · Karabiz — E-Learning</h3><span class="date">Angular · TypeScript</span></div>
+      <p class="meta">Jabiz Parda · <a href="https://avak.ir/">avak.ir</a> · <a href="https://jr.tamland.ir/">jr.tamland.ir</a> · <a href="https://karabiz.com/">karabiz.com</a></p>
+      <ul class="bul">
+        <li><strong>Avak</strong> — structured learning platform for mothers of newborn children.</li>
+        <li><strong>Tamland Junior</strong> — learning platform for pre-school children, with an interface built for early readers.</li>
+        <li><strong>Karabiz</strong> — online academy of practical workplace skills for working professionals.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <article class="entry">
+      <div class="eh"><h3>B.Sc. Computer Engineering — Iran University of Science and Technology</h3><span class="date">2019 – 2025</span></div>
+      <p class="meta">IUST · Tehran, Iran</p>
+      <p class="desc"><strong>Thesis — Video Streaming over QUIC.</strong> Evaluated QUIC-based video streaming against HTTP-based DASH under varying network conditions, using a <strong>Mininet on Linux</strong> test environment to emulate them.</p>
+    </article>
+  </section>
+
+  <div class="two">
+    <section>
+      <h2>Looking For</h2>
+      <ul class="bul">
+        <li>Senior Front-End Engineer or Front-End Lead</li>
+        <li><strong>Remote or Hybrid</strong> · flexible hours, any timezone</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Languages</h2>
+      <ul class="bul">
+        <li><strong>Persian</strong> — Native</li>
+        <li><strong>English</strong> — Professional working proficiency (B2)</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="foot"><span>shh79.github.io/cv</span><span>2 / 2</span></div>
+</div>
+
+</body>
+</html>
