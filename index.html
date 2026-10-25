@@ -44,6 +44,9 @@
   ]
 }
 </script>
+<link rel="alternate" type="application/pdf" href="resume/hessam-hosseini-resume.pdf" title="Résumé (PDF)">
+<link rel="alternate" type="text/markdown" href="resume/hessam-hosseini-resume.md" title="Résumé (Markdown)">
+<link rel="alternate" type="text/markdown" hreflang="fa" href="resume/hessam-hosseini-resume-fa.md" title="رزومه (Markdown)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
@@ -514,10 +517,10 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
           <span data-i18n="cta.contact">Get in touch</span>
         </a>
-        <button class="btn btn-ghost" type="button" data-print>
+        <a class="btn btn-ghost" id="resume-pdf" href="resume/hessam-hosseini-resume.pdf" download>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
           <span data-i18n="cta.pdf">Download PDF</span>
-        </button>
+        </a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/hessamhosseini/" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           <span data-i18n="cta.linkedin">LinkedIn</span>
@@ -1046,6 +1049,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
   EN['doc.title'] = document.title;
 
   var langBtn = document.getElementById('lang-toggle');
+  var resumePdf = document.getElementById('resume-pdf');
 
   function applyLang(lang) {
     var dict = lang === 'fa' ? FA : EN;
@@ -1056,6 +1060,8 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
     root.setAttribute('lang', lang);
     root.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
     if (dict['doc.title']) document.title = dict['doc.title'];
+    // Built from resume/*.md by scripts/build-resume.mjs
+    resumePdf.setAttribute('href', lang === 'fa' ? 'resume/hessam-hosseini-resume-fa.pdf' : 'resume/hessam-hosseini-resume.pdf');
     langBtn.textContent = lang === 'fa' ? 'EN' : 'فا';
     langBtn.setAttribute('aria-label', lang === 'fa' ? 'Switch to English' : 'تغییر به فارسی');
     // RTL and a different font change every section's offset.
@@ -1104,8 +1110,6 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
 
   /* ---- Print ---- */
   document.getElementById('print-btn').addEventListener('click', function () { window.print(); });
-  var dl = document.querySelector('[data-print]');
-  if (dl) dl.addEventListener('click', function () { window.print(); });
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
