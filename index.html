@@ -44,7 +44,8 @@
   ]
 }
 </script>
-<link rel="alternate" type="application/pdf" href="resume/hessam-hosseini-resume.pdf" title="Résumé (PDF)">
+<link rel="alternate" type="application/pdf" href="resume/hessam-hosseini-cv.pdf" title="CV (PDF)">
+<link rel="alternate" type="application/pdf" hreflang="fa" href="resume/hessam-hosseini-cv-fa.pdf" title="رزومه (PDF)">
 <link rel="alternate" type="text/markdown" href="resume/hessam-hosseini-resume.md" title="Résumé (Markdown)">
 <link rel="alternate" type="text/markdown" hreflang="fa" href="resume/hessam-hosseini-resume-fa.md" title="رزومه (Markdown)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -517,7 +518,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
           <span data-i18n="cta.contact">Get in touch</span>
         </a>
-        <a class="btn btn-ghost" id="resume-pdf" href="resume/hessam-hosseini-resume.pdf" download>
+        <a class="btn btn-ghost" id="resume-pdf" href="resume/hessam-hosseini-cv.pdf" download>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
           <span data-i18n="cta.pdf">Download PDF</span>
         </a>
@@ -802,6 +803,17 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
           <b>Mininet on Linux</b> to emulate the network conditions under test.</p>
         </div>
       </article>
+      <article class="card edu reveal">
+        <div class="job-top">
+          <h3 data-i18n="courses.title">Courses</h3>
+          <span class="period" data-i18n="courses.period"><a href="https://www.linkedin.com/in/behzad-sadeghi/" target="_blank" rel="noopener">Behzad Sadeghi</a> · CS Internship</span>
+        </div>
+        <p class="org" data-i18n="courses.org">Soft skills that support team leadership and mentoring</p>
+        <ul class="chips" data-i18n="courses.list">
+          <li class="chip key">Human Communication</li>
+          <li class="chip key">Introduction to Coaching</li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>
@@ -1007,6 +1019,12 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
     'edu.title': 'کارشناسی مهندسی کامپیوتر',
     'edu.period': 'مهر 1398 — مهر 1404',
     'edu.org': '<b>دانشگاه علم و صنعت ایران</b> · تهران، ایران',
+    'courses.title': 'دوره‌ها',
+    'courses.period': '<a href="https://www.linkedin.com/in/behzad-sadeghi/" target="_blank" rel="noopener">بهزاد صادقی</a> · CS Internship',
+    'courses.org': 'مهارت‌های نرم در خدمت رهبری تیم و منتورینگ',
+    'courses.list':
+      '<li class="chip key">ارتباطات انسانی</li>' +
+      '<li class="chip key">مقدمه‌ای بر کوچینگ</li>',
     'edu.thesisLabel': 'پایان‌نامه کارشناسی',
     'edu.thesis': '<b>پخش ویدیو روی QUIC.</b> ارزیابی پخش ویدیو مبتنی بر QUIC تحت شرایط مختلف شبکه و مقایسه رفتار آن با پخش DASH مبتنی بر HTTP، با تحلیل عملکرد هر پروتکل در برابر تغییر مشخصات شبکه. محیط آزمون با <b>Mininet روی لینوکس</b> برای شبیه‌سازی شرایط شبکه ساخته شد.',
 
@@ -1060,8 +1078,8 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px;margin-top:20px}
     root.setAttribute('lang', lang);
     root.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
     if (dict['doc.title']) document.title = dict['doc.title'];
-    // Built from resume/*.md by scripts/build-resume.mjs
-    resumePdf.setAttribute('href', lang === 'fa' ? 'resume/hessam-hosseini-resume-fa.pdf' : 'resume/hessam-hosseini-resume.pdf');
+    // Designed CVs, printed from resume/hessam-hosseini-cv*.html
+    resumePdf.setAttribute('href', lang === 'fa' ? 'resume/hessam-hosseini-cv-fa.pdf' : 'resume/hessam-hosseini-cv.pdf');
     langBtn.textContent = lang === 'fa' ? 'EN' : 'فا';
     langBtn.setAttribute('aria-label', lang === 'fa' ? 'Switch to English' : 'تغییر به فارسی');
     // RTL and a different font change every section's offset.

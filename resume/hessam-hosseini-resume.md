@@ -95,6 +95,13 @@ Online store for a Kashan carpet brand, selling machine-made carpets direct to c
 
 **Bachelor's thesis — Video Streaming over QUIC.** Evaluated QUIC-based video streaming under varying network conditions and compared its behaviour against HTTP-based DASH streaming, analysing how each transport performed as network characteristics changed. Built the test environment with **Mininet on Linux** to emulate the network conditions under test.
 
+## Courses
+
+*CS Internship*
+
+- **Human Communication** — [Behzad Sadeghi](https://www.linkedin.com/in/behzad-sadeghi/)
+- **Introduction to Coaching** — [Behzad Sadeghi](https://www.linkedin.com/in/behzad-sadeghi/)
+
 ## Current Focus
 
 ### Expanding into AI-Assisted Engineering

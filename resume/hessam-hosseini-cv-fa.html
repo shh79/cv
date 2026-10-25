@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>حسام حسینی — مهندس ارشد فرانت‌اند — رزومه</title>
+<meta name="author" content="Hessam Hosseini">
+<meta name="description" content="مهندس ارشد فرانت‌اند · Angular · React · TypeScript · Next.js — رزومه">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Vazirmatn:wght@400;500;600;700;800&display=block">
+<style>
+/* Persian twin of hessam-hosseini-cv.html: same layout, mirrored for RTL.
+   Latin runs (URLs, phone, tech names) sit in dir="ltr" spans so bidi keeps them intact. */
+@page{size:A4;margin:0}
+:root{
+  --ink:#15171c;--body:#2b2f38;--muted:#545b68;
+  --accent:#2347c6;--tint:#f1f4fc;--rule:#d8dde7;
+}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#e6e9ef;font:400 13px/1.72 'Vazirmatn','Segoe UI',Tahoma,sans-serif;color:var(--body)}
+a{color:inherit;text-decoration:none}
+strong{font-weight:700;color:var(--ink)}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.ltr{direction:ltr;unicode-bidi:isolate}
+
+.page{position:relative;width:210mm;height:297mm;margin:24px auto;background:#fff;overflow:hidden;
+  padding:44px 56px 34px;display:flex;flex-direction:column;box-shadow:0 2px 18px rgba(20,23,28,.12)}
+.page::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--accent)}
+@media print{body{background:#fff}.page{margin:0;box-shadow:none;break-after:page}}
+
+/* Header */
+.hd{display:flex;justify-content:space-between;gap:32px;align-items:flex-start}
+h1{font:800 40px/1.25 'Vazirmatn',Tahoma,sans-serif;color:var(--ink);margin:0 0 4px}
+.role{font-size:16.5px;font-weight:700;color:var(--accent);margin-bottom:2px}
+.stack{font-size:13px;color:var(--ink);font-weight:500}
+.avail{margin-top:8px;display:inline-flex;align-items:center;gap:8px;font-size:12.2px;font-weight:600;color:var(--ink);
+  background:var(--tint);padding:3px 9px 3px 12px;border-radius:999px}
+.avail i{width:7px;height:7px;border-radius:50%;background:#1a8a4a;display:block}
+.contact{display:flex;flex-direction:column;gap:5px;font:400 11.8px/1.35 'IBM Plex Mono',Consolas,monospace;color:var(--ink);padding-top:8px;white-space:nowrap}
+.contact li{display:flex;align-items:center;gap:8px}
+.contact .fa{font-family:'Vazirmatn',sans-serif;font-size:12.2px}
+.contact svg{width:13px;height:13px;flex:none;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* Key facts */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:18px 0 2px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.facts div{padding:7px 14px 7px 0;border-right:1px solid var(--rule)}
+.facts div:first-child{border-right:0;padding-right:0}
+.facts b{display:block;font:800 18.5px/1.35 'Vazirmatn',sans-serif;color:var(--ink)}
+.facts span{font-size:11.3px;color:var(--muted)}
+
+/* Sections */
+section{margin-top:14px}
+h2{display:flex;align-items:center;gap:12px;margin:0 0 6px;font:800 13.5px/1.2 'Vazirmatn',sans-serif;color:var(--accent)}
+h2::after{content:"";flex:1;height:1px;background:var(--rule)}
+.summary{font-size:13.2px;line-height:1.75;text-align:justify}
+
+.skills{display:grid;grid-template-columns:92px 1fr;gap:3px 16px;margin:0}
+.skills dt{font-weight:700;color:var(--ink);font-size:12.4px}
+.skills dd{margin:0;font-size:12.8px}
+
+/* Entries */
+.entry + .entry{margin-top:10px}
+.eh{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+h3{margin:0;font-size:14px;font-weight:700;color:var(--ink)}
+.date{font:500 11.8px 'Vazirmatn',sans-serif;color:var(--muted);white-space:nowrap}
+.date.mono{font:400 11.4px 'IBM Plex Mono',Consolas,monospace}
+.meta{font-size:11.9px;color:var(--muted);margin:0 0 3px}
+.meta a{color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:11.3px}
+.desc{margin-bottom:3px}
+.bul{list-style:square;padding-right:15px}
+.bul li{margin-bottom:3px;padding-right:1px}
+.bul a{color:var(--accent)}
+.bul li::marker{color:var(--accent);font-size:.9em}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.tags li{font:500 11px/1 'IBM Plex Mono',monospace;color:var(--accent);background:var(--tint);padding:4px 7px;border-radius:3px}
+
+/* Page 2 running head */
+.rh{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.rh b{font:800 19px 'Vazirmatn',sans-serif;color:var(--ink)}
+.rh span{font:400 11.4px 'IBM Plex Mono',monospace;color:var(--muted)}
+.foot{margin-top:auto;padding-top:8px;display:flex;justify-content:space-between;font:400 11px 'Vazirmatn',sans-serif;color:var(--muted)}
+.foot .ltr{font-family:'IBM Plex Mono',monospace;font-size:10.8px}
+.two,.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+</style>
+</head>
+<body>
+
+<!-- ============ صفحه ۱ ============ -->
+<div class="page">
+  <header class="hd">
+    <div>
+      <h1>حسام حسینی</h1>
+      <p class="role">مهندس ارشد فرانت‌اند · سرپرست تیم فرانت‌اند</p>
+      <p class="stack"><span class="ltr">Angular · React · TypeScript · Next.js · Node.js</span></p>
+      <p class="avail"><i aria-hidden="true"></i>آماده همکاری دورکاری یا هیبریدی · ساعات کاری منعطف</p>
+    </div>
+    <ul class="contact">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a class="ltr" href="mailto:shh2079@gmail.com">shh2079@gmail.com</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a class="ltr" href="tel:+989361830308">+98 936 183 0308</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><a class="ltr" href="https://www.linkedin.com/in/hessamhosseini/">linkedin.com/in/hessamhosseini</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg><a class="ltr" href="https://t.me/HessamHosseiniii">t.me/HessamHosseiniii</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><a class="ltr" href="https://shh79.github.io/cv/">shh79.github.io/cv</a></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="fa">کاشان، ایران · <span class="ltr">UTC+3:30</span></span></li>
+    </ul>
+  </header>
+
+  <div class="facts">
+    <div><b>بیش از ۵ سال</b><span>تجربه مهندسی نرم‌افزار</span></div>
+    <div><b>تیم ۵ نفره</b><span>سرپرستی مهندسان فرانت‌اند</span></div>
+    <div><b>۹ محصول</b><span>تحویل‌شده در محیط عملیاتی</span></div>
+    <div><b>کارشناسی</b><span>مهندسی کامپیوتر · علم و صنعت</span></div>
+  </div>
+
+  <section>
+    <h2>خلاصه</h2>
+    <p class="summary">مهندس ارشد فرانت‌اند با <strong>بیش از ۵ سال</strong> تجربه در ساخت و راهبری <strong>اپلیکیشن‌های وب سازمانی</strong> با <strong>Angular</strong> و <strong>React</strong> و TypeScript، به‌همراه توسعه <strong>فول‌استک با Next.js و Node.js</strong>. به عنوان <strong>سرپرست تیم فرانت‌اند</strong>، مسئول معماری، استانداردهای کدنویسی، فرایند بازبینی کد و مرحله تست پیش از انتشار هستم. کار من در سطح معماری و قراردادهای داده است، نه فقط رابط کاربری — با تمرکز پیوسته بر ساختار مقیاس‌پذیر، کامپوننت‌های قابل استفاده مجدد و نگهداشت‌پذیری بلندمدت.</p>
+  </section>
+
+  <section>
+    <h2>مهارت‌ها</h2>
+    <dl class="skills">
+      <dt>فرانت‌اند</dt><dd><strong>Angular</strong> (Standalone، Signals، OnPush)، <strong>React</strong>، <strong>Next.js</strong>، <strong>TypeScript</strong>، JavaScript (ES2015+)، <strong>RxJS</strong>، NgRx، HTML5، CSS3، Tailwind CSS، Angular Material، PrimeNG، PWA، طراحی واکنش‌گرا</dd>
+      <dt>بک‌اند</dt><dd>Node.js، Express.js، Next.js (فول‌استک)، طراحی REST API، GraphQL، WebSockets، Server-Sent Events، Webhooks، احراز هویت و سطح دسترسی</dd>
+      <dt>پایگاه داده</dt><dd>SQL Server، PostgreSQL، MySQL، MongoDB</dd>
+      <dt>ابزارها</dt><dd>Git، GitHub، Docker، لینوکس (Ubuntu)، GraphQL Code Generator، D3.js، Three.js، Mininet</dd>
+      <dt>اصول مهندسی</dt><dd>معماری نرم‌افزار، بازبینی کد، استانداردهای کدنویسی، استراتژی برنچ، مدل‌سازی داده، تحلیل کسب‌وکار، رهبری فنی، منتورینگ</dd>
+      <dt>هوش مصنوعی</dt><dd>Claude Code، Cursor، OpenCode، MCP (پروتکل زمینه مدل)، Python برای ابزارهای LLM</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>سوابق کاری</h2>
+    <article class="entry">
+      <div class="eh"><h3>سرپرست تیم فرانت‌اند — <span class="ltr">Jabiz Parda</span></h3><span class="date">آذر ۱۴۰۰ – اکنون</span></div>
+      <p class="meta">اپلیکیشن‌های وب سازمانی · دورکاری · حدود ۵ سال</p>
+      <ul class="bul">
+        <li><strong>سرپرستی تیم ۵ نفره فرانت‌اند</strong> روی اپلیکیشن‌های سازمانی بزرگ، با مالکیت معماری از ساختار کامپوننت و مدیریت وضعیت تا قراردادهای API.</li>
+        <li><strong>تدوین استانداردهای کدنویسی و فرایند توسعه تیم</strong> — مبنای مشترک برای طراحی، ساخت، بازبینی و تحویل قابلیت‌ها.</li>
+        <li><strong>بازبینی همه Pull Requestها</strong> روی برنچ هر تسک، به عنوان کانال اصلی منتورینگ و حفظ یکدستی کد.</li>
+        <li><strong>تعریف معیارهای merge:</strong> کار هر تسک فقط با PR تأییدشده و پاس‌شدن همه تست‌کیس‌ها به برنچ فیچر می‌رسد و فیچر فقط پس از تکمیل به main می‌رود.</li>
+        <li><strong>شکستن هر قابلیت به واحدهای کاری قابل بازبینی</strong>، ایجاد تسک‌ها و توزیع آن‌ها در تیم تا پیشرفت کار قابل اندازه‌گیری بماند.</li>
+        <li><strong>طراحی مشترک مدل داده و REST API</strong> با مهندسان بک‌اند؛ شکل‌دادن به قراردادها پیش از پیاده‌سازی، نه مصرف آن‌ها پس از آن.</li>
+        <li><strong>مسئولیت بازخوردها و رفع باگ‌های پس از انتشار</strong> — پاسخ‌گو برای کار پس از تحویل، نه فقط تا لحظه تحویل.</li>
+        <li><strong>تحویل پلتفرم‌های سازمانی با قواعد کسب‌وکار پیچیده</strong>، از جمله مجموعه ملی ایمیدرو (بخش پروژه‌ها).</li>
+      </ul>
+      <ul class="tags"><li>Angular</li><li>TypeScript</li><li>RxJS</li><li>Component Architecture</li><li>REST APIs</li><li>Data Modelling</li><li>Code Review</li></ul>
+    </article>
+  </section>
+
+  <div class="foot"><span>حسام حسینی — رزومه</span><span>۱ / ۲</span></div>
+</div>
+
+<!-- ============ صفحه ۲ ============ -->
+<div class="page">
+  <div class="rh"><b>حسام حسینی</b><span class="ltr">shh2079@gmail.com · +98 936 183 0308</span></div>
+
+  <section>
+    <h2>پروژه‌های منتخب</h2>
+
+    <article class="entry">
+      <div class="eh"><h3>ایمیدرو — مجموعه پلتفرم‌های سازمانی</h3><span class="date mono ltr">Angular · TypeScript</span></div>
+      <p class="meta">سازمان توسعه و نوسازی معادن و صنایع معدنی ایران</p>
+      <p class="desc">پلتفرمی بزرگ‌مقیاس برای یک سازمان صنعتی ملی با روابط پیچیده میان ماژول‌ها — هر حوزه با قواعد کسب‌وکار، مدل داده و گزارش‌گیری خاص خود. حوزه‌های تحویل‌شده: <strong>HSE</strong>، <strong>انرژی</strong>، <strong>برنامه‌ریزی و زمان‌بندی</strong>، <strong>بهره‌وری</strong>، <strong>منابع انسانی</strong> و <strong>دفترچه تلفن</strong> سازمانی.</p>
+      <ul class="bul">
+        <li>انجام <strong>تحلیل کسب‌وکار و طراحی راهکار</strong> برای ماژول‌های محول‌شده و تبدیل نیازمندی‌های عملیاتی به طراحی فنی.</li>
+        <li>طراحی <strong>مدل داده و API</strong> با مهندسان بک‌اند و سپس ساخت لایه یکپارچه‌سازی سمت فرانت‌اند.</li>
+        <li>توسعه <strong>کامل اپلیکیشن‌های فرانت‌اند</strong> — معماری، کامپوننت‌های قابل استفاده مجدد، مدیریت وضعیت و قابلیت‌ها.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3><span class="ltr">Jazireh &amp; Tinaco</span> — پلتفرم‌های تأمین قطعات ماشین‌آلات</h3><span class="date mono ltr">Angular · TypeScript</span></div>
+      <p class="meta">مشتریان خصوصی / تجاری</p>
+      <ul class="bul">
+        <li>پیاده‌سازی <strong>دسترسی مبتنی بر نقش برای انواع کاربران</strong>؛ نقش هر کاربر، دیده‌ها و مجوزهای او را تعیین می‌کند.</li>
+        <li>ساخت <strong>باشگاه مشتریان</strong> برای تشویق مشتریان بازگشتی و <strong>مدیریت فروش</strong> برای گردش‌کار تجاری.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3>سامانه فیش حقوقی — فرش آرمان</h3><span class="date mono ltr">Next.js · MongoDB</span></div>
+      <p class="meta">فول‌استک · <a class="ltr" href="https://salary.arman-carpet.com/">salary.arman-carpet.com</a></p>
+      <p class="desc">سامانه‌ای که کارکنان شرکت از طریق آن به فیش حقوقی خود دسترسی دارند. توسعه کامل — رابط کاربری، API و مدل داده.</p>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3>چهل‌حصاران — فروشگاه اینترنتی فرش</h3><span class="date mono ltr">Next.js · MongoDB</span></div>
+      <p class="meta">فول‌استک · <a class="ltr" href="https://chelhesaran.com/">chelhesaran.com</a></p>
+      <p class="desc">فروشگاه آنلاین یک برند فرش کاشان برای فروش مستقیم فرش ماشینی به مشتریان. توسعه کامل.</p>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3>مدیریت فاکتور و اسناد</h3><span class="date mono ltr">Next.js · MySQL</span></div>
+      <p class="meta">فول‌استک · گروه تأمین کالا</p>
+      <p class="desc">وب‌اپلیکیشن محلی برای مدیریت فاکتورها و اسناد یک گروه تأمین کالا. توسعه کامل.</p>
+    </article>
+
+    <article class="entry">
+      <div class="eh"><h3><span class="ltr">Avak · Tamland Junior · Karabiz</span> — آموزش آنلاین</h3><span class="date mono ltr">Angular · TypeScript</span></div>
+      <p class="meta"><span class="ltr">Jabiz Parda</span> · <a class="ltr" href="https://avak.ir/">avak.ir</a> · <a class="ltr" href="https://jr.tamland.ir/">jr.tamland.ir</a> · <a class="ltr" href="https://karabiz.com/">karabiz.com</a></p>
+      <ul class="bul">
+        <li><strong>Avak</strong> — پلتفرم آموزشی ساختاریافته برای مادران نوزادان.</li>
+        <li><strong>Tamland Junior</strong> — پلتفرم آموزشی کودکان پیش‌دبستانی، با رابط کاربری مناسب نوآموزان.</li>
+        <li><strong>Karabiz</strong> — آکادمی آنلاین مهارت‌های کاربردی محیط کار برای شاغلان.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>تحصیلات</h2>
+    <article class="entry">
+      <div class="eh"><h3>کارشناسی مهندسی کامپیوتر — دانشگاه علم و صنعت ایران</h3><span class="date">۱۳۹۸ – ۱۴۰۴</span></div>
+      <p class="meta">تهران، ایران</p>
+      <p class="desc"><strong>پایان‌نامه — پخش ویدیو روی QUIC.</strong> ارزیابی پخش ویدیوی مبتنی بر QUIC در برابر DASH مبتنی بر HTTP تحت شرایط متغیر شبکه، با محیط آزمون <strong>Mininet روی لینوکس</strong> برای شبیه‌سازی این شرایط.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2><span>دوره‌ها · <span class="ltr">CS Internship</span></span></h2>
+    <ul class="bul cols">
+      <li><strong>ارتباطات انسانی</strong> — <a href="https://www.linkedin.com/in/behzad-sadeghi/">بهزاد صادقی</a></li>
+      <li><strong>مقدمه‌ای بر کوچینگ</strong> — <a href="https://www.linkedin.com/in/behzad-sadeghi/">بهزاد صادقی</a></li>
+    </ul>
+  </section>
+
+  <div class="two">
+    <section>
+      <h2>به دنبال</h2>
+      <ul class="bul">
+        <li>مهندس ارشد فرانت‌اند یا سرپرست تیم فرانت‌اند</li>
+        <li><strong>دورکاری یا هیبریدی</strong> · ساعات کاری منعطف</li>
+      </ul>
+    </section>
+    <section>
+      <h2>زبان‌ها</h2>
+      <ul class="bul">
+        <li><strong>فارسی</strong> — زبان مادری</li>
+        <li><strong>انگلیسی</strong> — سطح حرفه‌ای کاری (<span class="ltr">B2</span>)</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="foot"><span class="ltr">shh79.github.io/cv</span><span>۲ / ۲</span></div>
+</div>
+
+</body>
+</html>
